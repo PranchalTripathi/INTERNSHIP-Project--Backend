@@ -129,9 +129,9 @@ app.delete('/api/users/:id', (req, res) => {
 });
 
 // Serve frontend
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// });
 
 // Start server
 app.listen(PORT, () => {
@@ -148,4 +148,5 @@ process.on('SIGINT', () => {
     }
     process.exit(0);
   });
+
 });
